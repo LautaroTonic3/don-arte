@@ -8,21 +8,25 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
     <div class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
         <div class="row align-items-center w-100">
             <!-- Columna de la imagen -->
-            <div class="col-12 col-md-6 text-center">
+            <div class="col-12 col-md-6 text-center mb-4 mb-md-0">
                 <img src="resources-responsive/img/logo/logo-donarte.png" alt="logo-donarte" class="img-fluid">
             </div>
             <!-- Columna del texto -->
-            <div class="col-12 col-md-6">
-                <ul class="ms-md-5 list-unstyled text-center text-md-start">
-                    <li class="fs-4">Don Arte Argentina</li>
-                    <li class="fs-5">Organización Civil Sin Fines de Lucro</li>
-                    <li class="fs-5">Seguinos en Ig @donarteargentina</li>
-                    <li class="fs-5">Wpp +54 9 11 2255-5950</li>
-                </ul>
+            <div class="col-12 col-md-6 d-flex justify-content-center justify-content-md-start">
+                <!-- Div que se adapta al tamaño del texto, centrado en tabletas y móviles -->
+                <div class="d-inline-block bg-light p-3 rounded ms-md-5 text-center mt-4 mt-md-0">
+                    <ul class="list-unstyled mb-0 text-center text-md-start">
+                        <li class="fs-4">Don Arte Argentina</li>
+                        <li class="fs-5">Organización Civil Sin Fines de Lucro</li>
+                        <li class="fs-5">Seguinos en Ig @donarteargentina</li>
+                        <li class="fs-5">Wpp +54 9 11 2255-5950</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -31,4 +35,6 @@
     <!-- CDN Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
+
+
 </html>
