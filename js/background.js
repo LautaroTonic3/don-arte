@@ -4,14 +4,16 @@ const images = [
     'resources-responsive/img/background/background-3.jpg'
 ];
 
+// Preload images
+images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+});
+
 let currentIndex = 0;
 
 function changeBackgroundImage() {
-    gsap.to(document.body, {
-        duration: 1,
-        backgroundImage: `url('${images[currentIndex]}')`,
-        ease: 'power1.inOut'
-    });
+    document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
     currentIndex = (currentIndex + 1) % images.length;
 }
 
