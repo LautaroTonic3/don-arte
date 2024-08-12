@@ -7,10 +7,12 @@ const images = [
 let currentIndex = 0;
 
 function changeBackgroundImage() {
-    document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+    gsap.to(document.body, {
+        duration: 1,
+        backgroundImage: `url('${images[currentIndex]}')`,
+        ease: 'power1.inOut'
+    });
     currentIndex = (currentIndex + 1) % images.length;
 }
 
 setInterval(changeBackgroundImage, 3000);
-
-changeBackgroundImage();
